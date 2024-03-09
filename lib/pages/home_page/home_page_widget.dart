@@ -39,6 +39,21 @@ class _HomePageWidgetState extends State<HomePageWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+        appBar: AppBar(
+          backgroundColor: FlutterFlowTheme.of(context).primary,
+          automaticallyImplyLeading: false,
+          title: Text(
+            'Reconhecimento Faial Ryan',
+            style: FlutterFlowTheme.of(context).headlineMedium.override(
+                  fontFamily: 'Outfit',
+                  color: Colors.white,
+                  fontSize: 22.0,
+                ),
+          ),
+          actions: const [],
+          centerTitle: false,
+          elevation: 2.0,
+        ),
         body: const SafeArea(
           top: true,
           child: Column(
@@ -47,8 +62,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               Expanded(
                 child: SizedBox(
                   width: double.infinity,
+                  height: double.infinity,
                   child: custom_widgets.ReconhecimentoFacial(
                     width: double.infinity,
+                    height: double.infinity,
                   ),
                 ),
               ),
