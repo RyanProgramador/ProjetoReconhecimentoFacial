@@ -43,7 +43,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           title: Text(
-            'Reconhecimento Faial Ryan',
+            'Reconhecimento Facial Ryan',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: Colors.white,
